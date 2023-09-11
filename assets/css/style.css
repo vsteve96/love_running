@@ -148,6 +148,16 @@ main {
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    /* photos are treated as text elements and text has vertical spacing by deafult, this removes it */
+    line-height: 0;
+}
 /* Footer */
 #social-networks {
     text-align: center;
