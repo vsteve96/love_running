@@ -160,6 +160,7 @@ main {
     line-height: 0;
 }
 
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -214,6 +215,7 @@ nav {
     font-size: 2rem;
 }
 
+
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
     #photos {
@@ -255,8 +257,11 @@ nav {
 
     /* Main content */
     main {
-        /* Push main content down to accomodate larger header */
-        margin-top: 79px;
+        /* Enlarge main element to push footer down */
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
+        margin-top: 47px;
     }
 
     /* Hero */
@@ -290,6 +295,31 @@ nav {
     }
 }
 
+    /* Form */
+    #signup {
+        background: url("../images/signup-image.webp");
+        background-size: cover;
+        background-position: 75%;
+        flex-grow: 1;
+        padding: 20px 10% 0 10%;
+}
+
+    #signup-form>h2 {
+        color: #fafafa;
+}
+
+    #signup-form {
+        color: #ffffff;
+        background-color: rgba(60, 60, 60, 0.6);
+        margin: 30 30;
+}
+
+    #signup .text-input {
+        background: transparent;
+        color: #fafafa;
+        border: 1px solid #fafafa;
+        border-radius: 2px;
+}
 
 
 /* Media query: laptops and larger (992px and up) */
@@ -303,6 +333,7 @@ nav {
         column-count: 4;
     }
 }
+
 /* Media query: desktop and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
 
